@@ -35,7 +35,6 @@ def vote_on_server(url, cookies):
 
     # Wait for document to load
     try:
-
         wait.until(EC.presence_of_element_located((By.XPATH, "//body")))
         slow()
     except TimeoutException:
@@ -43,24 +42,23 @@ def vote_on_server(url, cookies):
         driver.quit()
         return False
 
-    # Wait for cookies prompt to load and accapt
-    try:
-        cookies_accept = wait.until(EC.element_to_be_clickable(
-            (By.XPATH, "//div[(@id='cookiescript_accept')]")))
-        slow()
-        cookies_accept.click()
-        slow()
-    except TimeoutException:
-        debug_log(driver, "Timed out waiting for cookies prompt to load")
-        driver.quit()
-        return False
+    # # Wait for cookies prompt to load and accapt
+    # try:
+    #     cookies_accept = wait.until(EC.element_to_be_clickable(
+    #         (By.XPATH, "//div[(@id='cookiescript_accept')]")))
+    #     slow()
+    #     cookies_accept.click()
+    #     slow()
+    # except TimeoutException:
+    #     debug_log(driver, "Timed out waiting for cookies prompt to load")
+    #     driver.quit()
+    #     return False
 
     # Wait for the button to be clickable and click
     try:
-        vote_button = wait.until(EC.element_to_be_clickable(
-            (By.XPATH, "//a[(@title='Vote')]")))
+        login_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-test='auth-login-btn']")))
         slow()
-        vote_button.click()
+        login_button.click()
         slow()
     except TimeoutException:
         debug_log(driver, "Timed out waiting for button to be clickable")
@@ -120,35 +118,21 @@ def vote_on_server(url, cookies):
             driver, "Failed to find logged in user's name, is the cookie correct?")
         driver.quit()
 
-    # Selenium voting outcome detection
+    # Wait for rewards link to be clickable and click
     try:
-        wait.until(EC.presence_of_element_located(
-            (By.XPATH, "//h1[contains(text(), 'Vote Confirmation')]")))
-        debug_log(driver, "Vote successful!")
+        rewards_link = wait.until(EC.element_to_be_clickable(
+            (By.XPATH, "//a[.//span[text()='REWARDS']]")))
         slow()
-        driver.quit()
-        return True
+        rewards_link.click()
+        slow()
     except TimeoutException:
-        try:
-            alert_info_elements = wait.until(
-                EC.presence_of_all_elements_located((By.CLASS_NAME, "alert-info")))
-
-            for alert_info in alert_info_elements:
-                if "You will be able to vote again in approximately" in alert_info.text:
-                    match = re.search(r"(\d+)\s*hours", alert_info.text)
-
-                    if match:
-                        hours = int(match.group(1))
-                        debug_log(
-                            driver, f"Voting is on cooldown for {hours} hours")
-                    else:
-                        debug_log(driver, "Voting is on cooldown")
-
-                    slow()
-                    driver.quit()
-                    return False
-            raise TimeoutException
-        except TimeoutException:
-            debug_log(driver, "Timed out waiting for vote outcome")
-            driver.quit()
-            return False
+        debug_log(driver, "Timed out waiting for button to be clickable")
+        driver.quit()
+        return False
+    # # Selenium voting outcome detection
+    #     wait.until(EC.presence_of_element_located(
+    #         (By.XPATH, "//h1[contains(text(), 'Vote Confirmation')]")))
+    #     debug_log(driver, "Vote successful!")
+    #     slow()
+    #     driver.quit()
+    #     return None

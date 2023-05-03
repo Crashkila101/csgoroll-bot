@@ -1,4 +1,4 @@
-name: rust-auto-voter
+name: CSGORollBot
 channels:
     - defaults
     - conda-forge
