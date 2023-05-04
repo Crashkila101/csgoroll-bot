@@ -33,7 +33,7 @@ def get_driver(options=None):
         else:
             options.add_argument("--log-level=3")
             options.add_argument("--silent")
-
+            options.add_argument(r'--user-data-dir=C:\Users\Conor\AppData\Roaming\Mozilla\Firefox\Profiles\olkwead7.dev-edition-default')
         
     # Set up Firefox WebDriver using webdriver-manager  
     driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()), options=options)

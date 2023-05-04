@@ -20,7 +20,7 @@ def main():
     driver = get_driver(options)
 
     # Load page
-    driver.get("https://steamcommunity.com/login/home/?goto=")
+    driver.get("https://steamcommunity.com/openid/login?openid.mode=checkid_setup&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.return_to=https%3A%2F%2Fapi.entertoroll.com%2Fauth%2Fsteam%2Freturn&openid.realm=https%3A%2F%2Fapi.entertoroll.com")
     
     # Login stage
     input("Login and press enter to continue...")

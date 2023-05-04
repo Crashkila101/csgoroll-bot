@@ -1295,3 +1295,561 @@ console.warn: "Skipping Glean as no metrics id is passed"
 JavaScript error: resource://gre/modules/TelemetryEnvironment.sys.mjs, line 1073: TypeError: can't convert null to object
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1683210331826	geckodriver	INFO	Listening on 127.0.0.1:53761
+1683210334855	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--disable-gpu" "--disable-infoba ... debugging-port" "53762" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofileANqRLD"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1683210335210	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683210335215	Marionette	INFO	Listening on port 53769
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+console.error: "Warning: unrecognized command line flag -disable-notifications\n"
+console.error: "Warning: unrecognized command line flag -disable-dev-shm-usage\n"
+console.error: "Warning: unrecognized command line flag -disable-cloud-management\n"
+WebDriver BiDi listening on ws://127.0.0.1:53762
+Read port: 53769
+1683210335476	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53762/devtools/browser/e94313e8-dfc9-4c13-8fce-849ab34c85de
+1683210352003	Marionette	INFO	Stopped listening on port 53769
+[Child 14388, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14388, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14388, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14388, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14388, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14388, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14388, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14388, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14388, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+Dynamically enable window occlusion 1
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: "TelemetryScheduler.shutdown - Already shut down"
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+JavaScript error: resource://gre/modules/TelemetryEnvironment.sys.mjs, line 1073: TypeError: can't convert null to object
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+console.error: "C:\\Windows\\TEMP\\rust_mozprofileANqRLD\\storage" "to-be-removed" 0 "" ""
+console.error: "started removing C:\\Windows\\TEMP\\rust_mozprofileANqRLD\\storage\\to-be-removed"
+console.error: "done removing C:\\Windows\\TEMP\\rust_mozprofileANqRLD\\storage\\to-be-removed. removed 1 entries."
+console.warn: "Skipping Glean as no metrics id is passed"
+1683210366330	geckodriver	INFO	Listening on 127.0.0.1:53846
+1683210369359	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--disable-gpu" "--disable-infoba ... debugging-port" "53847" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofileEObA0q"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1683210369681	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683210369685	Marionette	INFO	Listening on port 53855
+Read port: 53855
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+console.error: "Warning: unrecognized command line flag -disable-notifications\n"
+console.error: "Warning: unrecognized command line flag -disable-dev-shm-usage\n"
+console.error: "Warning: unrecognized command line flag -disable-cloud-management\n"
+WebDriver BiDi listening on ws://127.0.0.1:53847
+1683210369809	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53847/devtools/browser/4d0817b0-5610-4e77-af47-9d908199805a
+1683210385546	Marionette	INFO	Stopped listening on port 53855
+[Child 13240, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 13240, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 13240, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 13240, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 13240, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 13240, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 13240, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 13240, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 13240, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+Dynamically enable window occlusion 1
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: "TelemetryScheduler.shutdown - Already shut down"
+console.error: "C:\\Windows\\TEMP\\rust_mozprofileEObA0q\\storage" "to-be-removed" 0 "" ""
+console.error: "started removing C:\\Windows\\TEMP\\rust_mozprofileEObA0q\\storage\\to-be-removed"
+console.error: "done removing C:\\Windows\\TEMP\\rust_mozprofileEObA0q\\storage\\to-be-removed. removed 1 entries."
+console.warn: "Skipping Glean as no metrics id is passed"
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+JavaScript error: resource://gre/modules/TelemetryEnvironment.sys.mjs, line 1073: TypeError: can't convert null to object
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1683210707315	geckodriver	INFO	Listening on 127.0.0.1:53976
+1683210710343	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--disable-gpu" "--disable-infoba ... debugging-port" "53977" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofileBahVcM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1683210710671	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683210710676	Marionette	INFO	Listening on port 53985
+Read port: 53985
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+console.error: "Warning: unrecognized command line flag -disable-notifications\n"
+console.error: "Warning: unrecognized command line flag -disable-dev-shm-usage\n"
+console.error: "Warning: unrecognized command line flag -disable-cloud-management\n"
+WebDriver BiDi listening on ws://127.0.0.1:53977
+1683210710802	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53977/devtools/browser/c8cb6b2b-a39e-40e2-be02-e8e8d5cd6d27
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+[Child 15156, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15156, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15156, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15156, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15156, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15156, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15156, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15156, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15156, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+1683210720984	Marionette	INFO	Stopped listening on port 53985
+Dynamically enable window occlusion 1
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: "TelemetryScheduler.shutdown - Already shut down"
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+console.error: "C:\\Windows\\TEMP\\rust_mozprofileBahVcM\\storage" "to-be-removed" 0 "" ""
+console.error: "started removing C:\\Windows\\TEMP\\rust_mozprofileBahVcM\\storage\\to-be-removed"
+console.error: "done removing C:\\Windows\\TEMP\\rust_mozprofileBahVcM\\storage\\to-be-removed. removed 1 entries."
+JavaScript error: resource://gre/modules/TelemetryEnvironment.sys.mjs, line 1073: TypeError: can't convert null to object
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+console.warn: "Skipping Glean as no metrics id is passed"
+1683210760304	geckodriver	INFO	Listening on 127.0.0.1:54071
+1683210763336	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--disable-gpu" "--disable-infoba ... debugging-port" "54072" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofileBXLXl1"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1683210763662	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683210763667	Marionette	INFO	Listening on port 54080
+Read port: 54080
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+console.error: "Warning: unrecognized command line flag -disable-notifications\n"
+console.error: "Warning: unrecognized command line flag -disable-dev-shm-usage\n"
+console.error: "Warning: unrecognized command line flag -disable-cloud-management\n"
+console.error: "Warning: unrecognized command line flag -user-data-dir\n"
+WebDriver BiDi listening on ws://127.0.0.1:54072
+1683210763790	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:54072/devtools/browser/9561fca6-de3a-4c84-8821-da6167cf20c6
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+1683210779737	Marionette	INFO	Stopped listening on port 54080
+[Child 10828, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 10828, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 10828, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 10828, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 10828, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 10828, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 10828, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 10828, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 10828, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+Dynamically enable window occlusion 1
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: "TelemetryScheduler.shutdown - Already shut down"
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+console.error: "C:\\Windows\\TEMP\\rust_mozprofileBXLXl1\\storage" "to-be-removed" 0 "" ""
+console.error: "started removing C:\\Windows\\TEMP\\rust_mozprofileBXLXl1\\storage\\to-be-removed"
+console.error: "done removing C:\\Windows\\TEMP\\rust_mozprofileBXLXl1\\storage\\to-be-removed. removed 1 entries."
+console.warn: "Skipping Glean as no metrics id is passed"
+JavaScript error: resource://gre/modules/TelemetryEnvironment.sys.mjs, line 1073: TypeError: can't convert null to object
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1683210794150	geckodriver	INFO	Listening on 127.0.0.1:54173
+1683210797181	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--disable-gpu" "--disable-infoba ... debugging-port" "54174" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofileGevqxT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1683210797505	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683210797509	Marionette	INFO	Listening on port 54181
+Read port: 54181
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+console.error: "Warning: unrecognized command line flag -disable-notifications\n"
+console.error: "Warning: unrecognized command line flag -incognito\n"
+WebDriver BiDi listening on ws://127.0.0.1:54174
+1683210797631	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:54174/devtools/browser/ec4becd9-be96-4adb-ba25-b9a2b6708a57
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://steamcommunity.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://steamcommunity.com."
+JavaScript warning: https://community.cloudflare.steamstatic.com/public/javascript/promo/stickers.js?v=GfA42_x2_aub&l=english&_cdn=cloudflare, line 93: unreachable code after return statement
+1683210830288	Marionette	INFO	Stopped listening on port 54181
+[Child 4232, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 4232, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 4232, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 4232, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 4232, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 4232, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 4232, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 4232, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 4232, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+Dynamically enable window occlusion 1
+console.error: services.settings: 
+  Message: StorageError: Storage error: Error: IndexedDB: blocklists/addons-bloomfilters list() IndexedDB:  execute() The application is shutting down
+  Stack:
+    StorageError@resource://services-settings/RemoteSettingsClient.sys.mjs:157:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:928:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:816:38
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+console.warn: services.settings: blocklists/gfx sync interrupted by shutdown
+console.error: (new Error("IndexedDB: main/quicksuggest getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.jsm", 18))
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: "C:\\Windows\\TEMP\\rust_mozprofileGevqxT\\storage" "to-be-removed" 0 "" ""
+console.error: "started removing C:\\Windows\\TEMP\\rust_mozprofileGevqxT\\storage\\to-be-removed"
+console.error: "done removing C:\\Windows\\TEMP\\rust_mozprofileGevqxT\\storage\\to-be-removed. removed 1 entries."
+console.warn: "Skipping Glean as no metrics id is passed"
+console.error: "TelemetryScheduler.shutdown - Already shut down"
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+JavaScript error: resource://gre/modules/TelemetryEnvironment.sys.mjs, line 1073: TypeError: can't convert null to object
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1683210839969	geckodriver	INFO	Listening on 127.0.0.1:54246
+1683210843002	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--disable-gpu" "--disable-infoba ... debugging-port" "54247" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofile7B8HqW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1683210843327	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683210843332	Marionette	INFO	Listening on port 54257
+Read port: 54257
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+console.error: "Warning: unrecognized command line flag -disable-notifications\n"
+console.error: "Warning: unrecognized command line flag -disable-dev-shm-usage\n"
+console.error: "Warning: unrecognized command line flag -disable-cloud-management\n"
+console.error: "Warning: unrecognized command line flag -user-data-dir\n"
+WebDriver BiDi listening on ws://127.0.0.1:54247
+1683210843456	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:54247/devtools/browser/dc2e6520-3e4c-4594-8d5a-706b1bfb3679
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+[Child 14176, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14176, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14176, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14176, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14176, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14176, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14176, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14176, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 14176, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+1683210858192	Marionette	INFO	Stopped listening on port 54257
+Dynamically enable window occlusion 1
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: "C:\\Windows\\TEMP\\rust_mozprofile7B8HqW\\storage" "to-be-removed" 0 "" ""
+console.error: "started removing C:\\Windows\\TEMP\\rust_mozprofile7B8HqW\\storage\\to-be-removed"
+console.error: "done removing C:\\Windows\\TEMP\\rust_mozprofile7B8HqW\\storage\\to-be-removed. removed 1 entries."
+console.warn: "Skipping Glean as no metrics id is passed"
+1683210883630	geckodriver	INFO	Listening on 127.0.0.1:54353
+1683210886670	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--disable-gpu" "--disable-infoba ... debugging-port" "54354" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofilewLrMpM"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1683210886991	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683210886996	Marionette	INFO	Listening on port 54361
+Read port: 54361
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+console.error: "Warning: unrecognized command line flag -disable-notifications\n"
+console.error: "Warning: unrecognized command line flag -incognito\n"
+WebDriver BiDi listening on ws://127.0.0.1:54354
+1683210887120	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:54354/devtools/browser/a670d2e5-f7c3-46af-9acc-11c632eb8272
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://steamcommunity.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://steamcommunity.com."
+1683210928117	Marionette	INFO	Stopped listening on port 54361
+[Child 19140, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 19140, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 19140, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 19140, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 19140, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 19140, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 19140, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 19140, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 19140, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+Dynamically enable window occlusion 1
+console.error: services.settings: 
+  Message: StorageError: Storage error: AbortError: IndexedDB: blocklists/addons-bloomfilters list() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.
+  Stack:
+    StorageError@resource://services-settings/RemoteSettingsClient.sys.mjs:157:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:928:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:816:38
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+console.warn: services.settings: blocklists/gfx sync interrupted by shutdown
+console.error: (new Error("IndexedDB: main/quicksuggest getLastModified() IndexedDB:  execute() The application is shutting down", "resource://services-settings/IDBHelpers.jsm", 18))
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: "TelemetryScheduler.shutdown - Already shut down"
+console.error: "C:\\Windows\\TEMP\\rust_mozprofilewLrMpM\\storage" "to-be-removed" 0 "" ""
+console.error: "started removing C:\\Windows\\TEMP\\rust_mozprofilewLrMpM\\storage\\to-be-removed"
+console.error: "done removing C:\\Windows\\TEMP\\rust_mozprofilewLrMpM\\storage\\to-be-removed. removed 1 entries."
+console.warn: "Skipping Glean as no metrics id is passed"
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+JavaScript error: resource://gre/modules/TelemetryEnvironment.sys.mjs, line 1073: TypeError: can't convert null to object
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1683210937919	geckodriver	INFO	Listening on 127.0.0.1:54442
+1683210940947	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--disable-gpu" "--disable-infoba ... debugging-port" "54443" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofileQ3c1eU"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1683210941272	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683210941277	Marionette	INFO	Listening on port 54451
+Read port: 54451
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+console.error: "Warning: unrecognized command line flag -disable-notifications\n"
+console.error: "Warning: unrecognized command line flag -disable-dev-shm-usage\n"
+console.error: "Warning: unrecognized command line flag -disable-cloud-management\n"
+console.error: "Warning: unrecognized command line flag -user-data-dir\n"
+WebDriver BiDi listening on ws://127.0.0.1:54443
+1683210941399	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:54443/devtools/browser/38a78f29-ea85-48c5-8442-fa9570cccf82
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+[Child 15596, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15596, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15596, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15596, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15596, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15596, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15596, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15596, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 15596, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+1683210955058	Marionette	INFO	Stopped listening on port 54451
+Dynamically enable window occlusion 1
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: "C:\\Windows\\TEMP\\rust_mozprofileQ3c1eU\\storage" "to-be-removed" 0 "" ""
+console.error: "started removing C:\\Windows\\TEMP\\rust_mozprofileQ3c1eU\\storage\\to-be-removed"
+console.error: "done removing C:\\Windows\\TEMP\\rust_mozprofileQ3c1eU\\storage\\to-be-removed. removed 1 entries."
+console.warn: "Skipping Glean as no metrics id is passed"
+1683211550676	geckodriver	INFO	Listening on 127.0.0.1:54592
+1683211553733	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Firefox Developer Edition\\firefox.exe" "--marionette" "--disable-gpu" "--disable-infoba ... debugging-port" "54593" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Windows\\TEMP\\rust_mozprofilehD8h8V"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1683211554062	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1683211554067	Marionette	INFO	Listening on port 54601
+Read port: 54601
+console.error: "Warning: unrecognized command line flag -disable-gpu\n"
+console.error: "Warning: unrecognized command line flag -disable-notifications\n"
+console.error: "Warning: unrecognized command line flag -disable-dev-shm-usage\n"
+console.error: "Warning: unrecognized command line flag -disable-cloud-management\n"
+console.error: "Warning: unrecognized command line flag -user-data-dir\n"
+WebDriver BiDi listening on ws://127.0.0.1:54593
+1683211554191	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:54593/devtools/browser/3403f33c-a097-417a-9312-af4590b7c0c7
+1683211559655	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:424:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+JavaScript error: , line 0: InvalidStateError: Navigated away from page
+[Child 2644, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 2644, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 2644, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 2644, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 2644, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 2644, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 2644, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 2644, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 2644, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /builds/worker/checkouts/gecko/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+1683211562923	Marionette	INFO	Stopped listening on port 54601
+Dynamically enable window occlusion 1
+*** You are running in background task mode. ***
+*** You are running in headless mode.
+console.error: "TelemetryScheduler.shutdown - Already shut down"
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:727:15
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.sys.mjs:458:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.sys.mjs:10:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:698:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.sys.mjs:226:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.sys.mjs:1227:42
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:576:16
+
+JavaScript error: resource://gre/modules/TelemetryEnvironment.sys.mjs, line 1073: TypeError: can't convert null to object
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 727: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+console.error: "C:\\Windows\\TEMP\\rust_mozprofilehD8h8V\\storage" "to-be-removed" 0 "" ""
+console.error: "started removing C:\\Windows\\TEMP\\rust_mozprofilehD8h8V\\storage\\to-be-removed"
+console.error: "done removing C:\\Windows\\TEMP\\rust_mozprofilehD8h8V\\storage\\to-be-removed. removed 1 entries."
+console.warn: "Skipping Glean as no metrics id is passed"
