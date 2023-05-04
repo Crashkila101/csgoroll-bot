@@ -17,7 +17,7 @@ cd CSGORollBot
 2. Create a new conda environment using the environment.yaml file:
 ```bash
 conda env create -f environment.yaml
-conda activate CSGORollBot
+conda activate csgo-roll-bot
 ```
 
 3. Download Chromium binary and driver for your system from [here](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html).

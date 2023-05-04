@@ -1,5 +1,5 @@
 # Start
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 from src.driver_setup import get_driver
 
 # Locators
@@ -16,7 +16,7 @@ from src.debug import slow
 import re
 
 
-def vote_on_server(url, cookies):
+def open_on_server(url, cookies):
 
     # Get driver
     driver = get_driver()
@@ -80,6 +80,10 @@ def vote_on_server(url, cookies):
         debug_log(driver, "Timed out waiting for/filling in Steam form")
         driver.quit()
         return False
+    
+    # Add cookies
+    for cookie in cookies:
+        driver.add_cookie(cookie)
 
     # Wait for steam to load
     try:
@@ -90,9 +94,7 @@ def vote_on_server(url, cookies):
         driver.quit()
         return False
 
-    # Add cookies
-    for cookie in cookies:
-        driver.add_cookie(cookie)
+
 
     # Reload page
     driver.refresh()

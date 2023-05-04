@@ -1,5 +1,5 @@
 # Selenium
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.options import Options
 from src.driver_setup import get_driver
 
 # Other
