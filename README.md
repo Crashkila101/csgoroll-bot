@@ -1,7 +1,7 @@
-# Rust Auto Voter
-**Rust Auto Voter** is a Python program that automates voting on **rust-servers.net**, a website where Rust game servers are listed and ranked based on the number of votes they receive. The program uses the **Selenium WebDriver** library to simulate human interaction with the website, and can be configured to vote for multiple Rust servers at set intervals.
+# CSGORoll Auto Bot
+**CSGORoll Auto Bot** is a Python program that automates opening cases **csgoroll.com**, a gambling website where daily rewards are given to players after a certain amount of money has been wagered. The program uses the **Selenium WebDriver** library to simulate human interaction with the website.
 
-The program requires the user to have a valid Steam account and to generate Steam login cookies, which are used to bypass the website's login process. Additionally, the user must provide the program with the URLs of the Rust servers they wish to vote for, which can be added to the `urls.json` configuration file.
+The program requires the user to have a valid Steam account and to generate Steam login cookies, which are used to bypass the website's login process.
 
 The program is designed to be run on Linux or Windows and requires the user to download the appropriate Chromium browser and driver for their system from the Chromium Browser Snapshots website.
 
@@ -10,14 +10,14 @@ The program is designed to be run on Linux or Windows and requires the user to d
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/rust-auto-voter.git
-cd rust-auto-voter
+git clone https://github.com/yourusername/CSGORollBot.git
+cd CSGORollBot
 ```
 
 2. Create a new conda environment using the environment.yaml file:
 ```bash
 conda env create -f environment.yaml
-conda activate rust-auto-voter
+conda activate CSGORollBot
 ```
 
 3. Download Chromium binary and driver for your system from [here](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html).
@@ -29,13 +29,7 @@ Extract the downloaded files and move them to the `./browser` directory in the p
 
 ## Configuration Setup
 
-1. Add your server URL(s) in `./config/urls.json` in JSON format, like so:
-```json
-["<url1>", "<url2>"]
-```
-
-2. Run `python cookie_getter.py` and log in to your Steam account. Once you are logged in, press Enter and specify the account's name. You can add as many accounts as you want.
-
+Run `python cookie_getter.py` and log in to your Steam account. Once you are logged in, press Enter and specify the account's name. You can add as many accounts as you want.
 
 ## Running the Program
 
@@ -61,7 +55,7 @@ python main.py [--debug] [--slow <seconds>] [--width <pixels>] [--height <pixels
 
 **--driver_path <path>** (optional) - Manually specify Chromium driver path (*default: dynamic*)
 
-**--interval <hours>** (optional) - How many hours between each voting loop (*default: 5*)
+**--interval <hours>** (optional) - How many hours between each case opening loop (*default: 24*)
 
 For example, to run the program in debugging mode with a specific browser and driver path, use:
 
