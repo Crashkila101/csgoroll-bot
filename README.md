@@ -1,5 +1,5 @@
 # CSGORoll Auto Bot
-**CSGORoll Auto Bot** is a Python program that automates opening cases **csgoroll.com**, a gambling website where daily rewards are given to players after a certain amount of money has been wagered. The program uses the **Selenium WebDriver** library to simulate human interaction with the website.
+**CSGORoll Auto Bot** is a Python program that automates opening cases on **csgoroll.com**, a gambling website where daily rewards are given to players after a certain amount of money has been wagered. The program uses the **Selenium WebDriver** library to simulate human interaction with the website.
 
 The program requires the user to have a valid Steam account and to generate Steam login cookies, which are used to bypass the website's login process.
 
