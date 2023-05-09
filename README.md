@@ -1,7 +1,7 @@
 # CSGORoll Auto Bot
 **CSGORoll Auto Bot** is a Python program that automates opening cases on **csgoroll.com**, a gambling website where daily rewards are given to players after a certain amount of money has been wagered. The program uses the **Selenium WebDriver** library to simulate human interaction with the website.
 
-The program requires the user to have a valid Steam account and to generate Steam login cookies, which are used to bypass the website's login process.
+The program requires the user to have a valid steam account that is signed up to CSGORoll.
 
 The program is designed to be run on Linux or Windows and requires the user to download the appropriate Chromium browser and driver for their system from the Chromium Browser Snapshots website.
 
@@ -10,26 +10,31 @@ The program is designed to be run on Linux or Windows and requires the user to d
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/CSGORollBot.git
-cd CSGORollBot
+git clone https://github.com/Crashkila101/csgoroll-bot.git
+cd csgoroll-bot
 ```
 
 2. Create a new conda environment using the environment.yaml file:
 ```bash
 conda env create -f environment.yaml
-conda activate CSGORollBot
+```
+(This may take a while so be patient)
+
+3. Activate the environment:
+```bash
+conda activate csgoroll-bot
 ```
 
-3. Download Chromium binary and driver for your system from [here](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html).
+4. Download Chromium binary and driver for your system from [here](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html).
 
-- Find the latest version in a file called `LAST_CHANGE`.
+- Pick any version, preferably the latest release.
 - Download the binary and the driver. Most people will either want to download from Linux_x64 or Win_x64 directories.
 - The files you want to download will be packaged into a zip archive with the following naming scheme `chrome-*.zip` and `chromedriver_*.zip`. For example, for Linux it will be `Linux_x64/<version>/chrome-linux.zip` and `Linux_x64/<version>/chromedriver_linux64.zip`.
 Extract the downloaded files and move them to the `./browser` directory in the project folder.
 
 ## Configuration Setup
 
-Run `python cookie_getter.py` and log in to your Steam account. Once you are logged in, press Enter and specify the account's name. You can add as many accounts as you want.
+Run `python main.py` and log in to your Steam account. Once you are logged in, press Enter and specify the account's name. You can add as many accounts as you want.
 
 ## Running the Program
 
