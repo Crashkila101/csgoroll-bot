@@ -19,7 +19,7 @@ from src.logs import log, debug_log
 from src.debug import slow
 
 
-deafult_paths = {
+default_paths = {
     "Windows": ("./browser/chrome-win/chrome.exe", "./browser/chromedriver_win32/chromedriver.exe"),
     "Linux": ("./browser/chrome-linux/chrome", "./browser/chromedriver_linux64/chromedriver")
 }
@@ -38,9 +38,9 @@ def get_paths():
 
     else:
         if platform.system() == "Windows":
-            browser_path, driver_path = deafult_paths["Windows"]
+            browser_path, driver_path = default_paths["Windows"]
         else:
-            browser_path, driver_path = deafult_paths["Linux"]
+            browser_path, driver_path = default_paths["Linux"]
 
     # Check paths
     if not os.path.isfile(browser_path):
@@ -123,7 +123,7 @@ def steam_login(driver):
         # Some users get a confirm sign in dialog, others an input box
         try:
             wait.until(EC.presence_of_element_located(
-            (By.XPATH, "//div[(@class='newlogindialog_AwaitingMobileConfText_7LmnT')]")))
+            (By.XPATH, "//div[contains(text(), 'Enter a code instead')]")))
             input("Press enter after you have confirmed the login on your phone")
         except TimeoutException:
             two_factor_code = input("Enter your 2FA code: ")

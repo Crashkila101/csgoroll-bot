@@ -5,6 +5,7 @@ from selenium.webdriver.common.by import By
 
 from src.debug import slow
 from src. logs import debug_log, log
+import time
 
 
 def action_sequence(driver, url):
@@ -30,7 +31,7 @@ def action_sequence(driver, url):
         driver.quit()
         return False
 
-    # Wait for the button to be clickable and click
+    # Wait for the login button to be clickable and click
     try:
         login_button = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-test='auth-login-btn']")))
         slow()
@@ -41,24 +42,7 @@ def action_sequence(driver, url):
         driver.quit()
         return False
 
-    # Steam Form
-    try:
-        steam_form = wait.until(EC.presence_of_element_located(
-            (By.XPATH, "//form[(@name='steam_form')]")))
-        form_checkbox = steam_form.find_element(
-            By.XPATH, ".//input[(@class='form-check-input')]")
-        slow()
-        form_checkbox.click()
-        slow()
-        steam_form.submit()
-        slow()
-    except TimeoutException:
-        debug_log(driver, "Timed out waiting for/filling in Steam form")
-        driver.quit()
-        return False
-    
-
-    # Wait for steam to load
+    # Steam login
     try:
         wait.until(EC.presence_of_element_located((By.XPATH, "//body")))
         slow()
@@ -66,30 +50,19 @@ def action_sequence(driver, url):
         debug_log(driver, "Timed out waiting for Steam to load")
         driver.quit()
         return False
-
-    # Reload page
-    driver.refresh()
-
-    # Steam login
+    
+    # Steam Form
     try:
-        # Wait for steam login form to load
-        login_form = wait.until(EC.presence_of_element_located(
-            (By.XPATH, "//form[(@name='loginForm')]")))
-        # Get the logged in user's name
-        user_info = login_form.find_element(
-            By.XPATH, ".//div[(@class='OpenID_loggedInAccount')]")
-        debug_log(driver, f"Logged in as {user_info.text} ")
+        steam_signin_button = wait.until(EC.element_to_be_clickable(
+            (By.ID, "imageLogin")))
         slow()
-        login_form.submit()
+        steam_signin_button.click()
         slow()
     except TimeoutException:
-        debug_log(driver, "Timed out waiting for steam login form to load")
+        debug_log(driver, "Timed out; Steam sign in button not found")
         driver.quit()
         return False
-    except NoSuchElementException:
-        debug_log(
-            driver, "Failed to find logged in user's name, is the cookie correct?")
-        driver.quit()
+
 
     # Wait for rewards link to be clickable and click
     try:
@@ -103,4 +76,33 @@ def action_sequence(driver, url):
         driver.quit()
         return False
     
+    while wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".mat-focus-indicator.open-btn.mat-button-3d.mat-flat-button.mat-button-base.mat-accent.ng-star-inserted"))):
+    # Link to open case modal box
+        try:
+            open_case_modal = wait.until(EC.element_to_be_clickable(
+                    (By.XPATH, "//button[contains(@class, 'mat-focus-indicator open-btn mat-button-3d mat-flat-button mat-button-base mat-accent ng-star-inserted')]")))
+            slow()
+            open_case_modal.click()
+            slow()
+        except TimeoutException:
+            debug_log(driver, "Timed out waiting for button to be clickable")
+            driver.quit()
+            return False
+
+        # Open case and close modal
+        try:
+            open_case = wait.until(EC.element_to_be_clickable(
+                    (By.XPATH, "//button[contains(@class,'mat-focus-indicator mat-raised-button mat-button-base mat-button-3d open-btn mat-accent ng-star-inserted')]")))
+            slow()
+            open_case.click()
+            slow()
+            time.sleep(0.1)
+            close_modal = wait.until(EC.element_to_be_clickable(
+                    (By.XPATH, "//button[contains(@class,'mat-focus-indicator close mat-icon-button mat-button-base')]")))
+            slow()
+            close_modal.click()
+        except TimeoutException:
+            debug_log(driver, "Timed out waiting for button to be clickable")
+            driver.quit()
+            return False    
     return None

@@ -4,9 +4,13 @@ import time
 from src.action_sequence import action_sequence
 from src.driver_setup import get_driver
 from src.args import args
-
+from src.logs import log, debug_log
 
 def main():
+    # Log script initialization
+    log("-----------------------")
+    log(f"App initiated at {datetime.now().strftime('%H:%M:%S')}")
+
     # Url search
     vote_url_file = "./config/url.json"
     with open(vote_url_file, 'r') as file:
