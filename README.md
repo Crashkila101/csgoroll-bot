@@ -17,8 +17,9 @@ cd csgoroll-bot
 2. Create a new conda environment using the environment.yaml file:
 ```bash
 conda env create -f environment.yaml
+#(This may take a while so be patient)
 ```
-(This may take a while so be patient)
+
 
 3. Activate the environment:
 ```bash
@@ -34,7 +35,7 @@ Extract the downloaded files and move them to the `./browser` directory in the p
 
 ## Configuration Setup
 
-Run `python main.py` and log in to your Steam account. Once you are logged in, press Enter and specify the account's name. You can add as many accounts as you want.
+Run `python main.py` and log in to your Steam account. Follow the instructions that appear in your terminal.
 
 ## Running the Program
 
