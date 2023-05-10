@@ -6,6 +6,7 @@ The program requires the user to have a valid steam account that is signed up to
 The program is designed to be run on Linux or Windows and requires the user to download the appropriate Chromium browser and driver for their system from the Chromium Browser Snapshots website.
 
 If you like my bot, use code COOGER. Thanks ;)
+https://csgoroll.com/r/COOGER
 ## Environment Setup
 
 1. Clone the repository:
