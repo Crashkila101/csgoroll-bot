@@ -76,7 +76,7 @@ def action_sequence(driver, url):
         driver.quit()
         return False
     
-    while EC.visibility_of_element_located((By.XPATH, "//button[contains(span/span/text(), 'OPEN CASE')]")):
+    while wait.until(EC.visibility_of_element_located((By.XPATH, "//button[contains(span/span/text(), 'OPEN CASE')]"))):
     # Link to open case modal box
         try:
             open_case_modal = wait.until(EC.element_to_be_clickable(
