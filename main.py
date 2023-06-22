@@ -40,7 +40,7 @@ def main():
         # Get the current time
         time_since = datetime.now() - last_action
 
-        # Check if it's been 5 hours since the last execution
+        # Check if it's been x hours since the last execution
         if time_since.seconds > 60*60*args.interval:
             last_action = datetime.now()
             print(f"Beginning at {datetime.now().strftime('%H:%M:%S')}")

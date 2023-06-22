@@ -76,11 +76,11 @@ def action_sequence(driver, url):
         driver.quit()
         return False
     
-    while wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".mat-focus-indicator.open-btn.mat-button-3d.mat-flat-button.mat-button-base.mat-accent.ng-star-inserted"))):
+    while EC.visibility_of_element_located((By.XPATH, "//button[contains(span/span/text(), 'OPEN CASE')]")):
     # Link to open case modal box
         try:
             open_case_modal = wait.until(EC.element_to_be_clickable(
-                    (By.XPATH, "//button[contains(@class, 'mat-focus-indicator open-btn mat-button-3d mat-flat-button mat-button-base mat-accent ng-star-inserted')]")))
+                    (By.XPATH, "//button[contains(span/span/text(), 'OPEN CASE')]")))
             slow()
             open_case_modal.click()
             slow()
@@ -92,13 +92,13 @@ def action_sequence(driver, url):
         # Open case and close modal
         try:
             open_case = wait.until(EC.element_to_be_clickable(
-                    (By.XPATH, "//button[contains(@class,'mat-focus-indicator mat-raised-button mat-button-base mat-button-3d open-btn mat-accent ng-star-inserted')]")))
+                    (By.XPATH, "//button[contains(span/span/span/text(), 'Open 1 time')]")))
             slow()
             open_case.click()
             slow()
             time.sleep(0.1)
-            close_modal = wait.until(EC.element_to_be_clickable(
-                    (By.XPATH, "//button[contains(@class,'mat-focus-indicator close mat-icon-button mat-button-base')]")))
+            close_modal = wait.until(
+                EC.element_to_be_clickable((By.CLASS_NAME, "mat-focus-indicator.close.mat-icon-button.mat-button-base")))
             slow()
             close_modal.click()
         except TimeoutException:
