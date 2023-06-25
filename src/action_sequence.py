@@ -76,11 +76,11 @@ def action_sequence(driver, url):
         driver.quit()
         return False
     
-    while wait.until(EC.visibility_of_element_located((By.XPATH, "//button[contains(span/span/text(), 'OPEN CASE')]"))):
+    while wait.until(EC.visibility_of_element_located((By.XPATH, "//button[contains(span/span/text(), 'OPEN CASE')]""[not(.//span/div/span[contains(text(), 'IN')])]"))):
     # Link to open case modal box
         try:
             open_case_modal = wait.until(EC.element_to_be_clickable(
-                    (By.XPATH, "//button[contains(span/span/text(), 'OPEN CASE')]")))
+                    (By.XPATH, "//button[contains(span/span/text(), 'OPEN CASE')]""[not(.//span/div/span[contains(text(), 'IN')])]")))
             slow()
             open_case_modal.click()
             slow()
@@ -96,9 +96,9 @@ def action_sequence(driver, url):
             slow()
             open_case.click()
             slow()
-            time.sleep(0.1)
+            time.sleep(0.4)
             close_modal = wait.until(
-                EC.element_to_be_clickable((By.CLASS_NAME, "mat-focus-indicator.close.mat-icon-button.mat-button-base")))
+                EC.element_to_be_clickable((By.CSS_SELECTOR, "button[mat-dialog-close='']")))
             slow()
             close_modal.click()
         except TimeoutException:
